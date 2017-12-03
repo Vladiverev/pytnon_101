@@ -43,5 +43,3 @@ else:
     contents.write(time.strftime("%b_%d_%Y_%H_%M_") + 'image' + ' in folder Other\n')
     print('Other')
 contents.close()
-
-#
