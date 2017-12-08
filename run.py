@@ -3,7 +3,7 @@ import requests
 import json
 import argparse
 import shutil
-from PIL import ImageGrab
+import pyscreenshot as ImageGrab
 import time
 
 
@@ -72,7 +72,8 @@ def text_save(imt):
 # screenshot
 def screen(name):
     time.sleep(5)
-    ImageGrab.grab().save('./screenshot/' + time.strftime("%b_%d_%Y_%H_%M_") + name + '.jpg', "JPEG")
+    im = ImageGrab.grab()
+    im.save('./screenshot/' + time.strftime("%b_%d_%Y_%H_%M_") + name + '.jpg', "JPEG")
     contents(name, 'screenshot')
 
 
