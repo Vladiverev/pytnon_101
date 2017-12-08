@@ -1,6 +1,7 @@
 requests==2.18.4
 pillow==4.3.0
 argparse==1.4.0
+pyscreenshot==0.4.2
 
 
 
