@@ -6,7 +6,16 @@ import shutil
 import pyscreenshot as ImageGrab
 import time
 
-
+''' This script sorts ('-i') your image for "fauna", "text", "other", and copies them to the folders.
+If image has text, this script can recognize('-t') him.
+Also you can make a screenshot('-s') with a delay of 5 seconds.
+Run the script using the following command:
+  python run.py \
+  -h 
+  -i <input file> \
+  -t <input file>\
+  -s <output file>\ 
+'''
 # Pass the image data to an encoding function.
 def encode_image(image):
     with open(image, 'rb') as image_file:
