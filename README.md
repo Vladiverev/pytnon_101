@@ -11,10 +11,10 @@ argparse 1.4.0
 pyscreenshot 0.4.2
 # Using
 Run the script using the following command:
-  python run.py \
-  -h 'Help'
-  -i <input file> \
-  -t <input file>\
-  -s <output file>\
+python run.py
+-h 'Help'
+-i <input file>
+-t <input file>
+-s <output file>
 
 
